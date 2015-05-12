@@ -1,0 +1,32 @@
+{
+  "name": "react-native-reverse-geo",
+  "version": "0.0.4",
+  "description": "React Native module bridge to convert address to geo coordinates.",
+  "main": "index.js",
+  "peerDependencies": {
+    "react-native": "^0.4.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aaronksaunders/react-native-reverse-geo.git"
+  },
+  "keywords": [
+    "react",
+    "native",
+    "react-native",
+    "bridge",
+    "reversegeo",
+    "location",
+    "ios",
+    "react-component"
+  ],
+  "author": "Aaron K. Saunders <aaronksaunders@gmail.com> (http://www.clearlyinnovative.com)",
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/aaronksaunders/react-native-reverse-geo/blob/master/LICENSE"
+  },
+  "bugs": {
+    "url": "https://github.com/aaronksaunders/react-native-reverse-geo/issues"
+  },
+  "homepage": "https://github.com/aaronksaunders/react-native-reverse-geo#readme"
+}
