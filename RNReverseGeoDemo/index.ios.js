@@ -20,12 +20,19 @@ var {
 
 var RNReverseGeoDemo = React.createClass({
 
+  getInitialState: function() {
+    return {
+      reverseGeoResults: "Loading..."
+    };
+  },
+
   componentDidMount: function() {
+    var that = this;
     RNReverseGeo.geoCodeAddress("370 Tompkins Ave, Brooklyn, NY 11216", 
       function(_results){
         console.log(_results);
-        this.setState({
-          reverseGeoResults : JSON.stringify(_results)
+        that.setState({
+          reverseGeoResults : JSON.stringify(_results,null,2)
         })
       });
   },
@@ -34,7 +41,7 @@ var RNReverseGeoDemo = React.createClass({
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          Welcome to React Native!
+          "REVERSE GEO - 370 Tompkins Ave, Brooklyn, NY 11216"
         </Text>
         <Text style={styles.instructions}>
           {this.state.reverseGeoResults}
