@@ -60,6 +60,3 @@ RCT_EXPORT_METHOD(geoCodeAddress:(NSString *)addressString callback:(RCTResponse
      }];
 }
 @end
-
-
-@end
