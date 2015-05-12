@@ -29,12 +29,19 @@ var {
     RNReverseGeo
 } = require('NativeModules');
 
+  getInitialState: function() {
+    return {
+      reverseGeoResults: "Loading..."
+    };
+  },
+
   componentDidMount: function() {
+    var that = this;
     RNReverseGeo.geoCodeAddress("370 Tompkins Ave, Brooklyn, NY 11216", 
       function(_results){
         console.log(_results);
-        this.setState({
-          reverseGeoResults : JSON.stringify(_results)
+        that.setState({
+          reverseGeoResults : JSON.stringify(_results,null,2)
         })
       });
   },
