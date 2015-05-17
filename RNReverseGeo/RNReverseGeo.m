@@ -45,6 +45,7 @@ RCT_EXPORT_METHOD(geoCodeAddress:(NSString *)addressString callback:(RCTResponse
              NSDictionary *successDict = @{
                                            @"success" : @YES,
                                            @"address"  : myPlacemark.addressDictionary,
+                                           @"interestPoints" : placemark.areasOfInterest,
                                            @"coords" : @{
                                                    @"latitude": [[NSString alloc] initWithFormat:@"%f", placemark.coordinate.latitude],
                                                    @"longitude": [[NSString alloc] initWithFormat:@"%f", placemark.coordinate.longitude]
